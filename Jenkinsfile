@@ -8,7 +8,7 @@ node {
 
     stage "Build"
     
-        sh "sudo docker build -t ${imageName} -f applications/hello-kenzan/Dockerfile ."
+        sh "docker build -f applications/hello-kenzan/Dockerfile . -t ${imageName}"
     
     /*stage "Push"
 
