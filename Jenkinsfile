@@ -10,11 +10,11 @@ node {
     
         sh "docker build -t ${imageName} applications/hello-kenzan"
     
-    #stage "Push"
+    /*stage "Push"
 
-     #   sh "docker push ${imageName}"
+        sh "docker push ${imageName}"
 
-    #stage "Deploy"
+    stage "Deploy"
 
-        #sh "sed 's#__IMAGE__#'$BUILDIMG'#' part1/hello-kenzan/k8s/deployment.yaml | kubectl apply -f -"
+        sh "sed 's#__IMAGE__#'$BUILDIMG'#' part1/hello-kenzan/k8s/deployment.yaml | kubectl apply -f -" */
 }
